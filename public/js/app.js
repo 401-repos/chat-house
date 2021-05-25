@@ -1,7 +1,7 @@
 'use strict';
 
 const socket = io('http://localhost:3000');
-const socket2 = io('http://localhost:3000/amman-chat')
+const socket2 = io('http://localhost:3000/chat-room/amman')
 const input = document.getElementById('input');
 const button = document.getElementById('button');
 const userName = document.querySelector('input[hidden]').value;
