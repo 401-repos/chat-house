@@ -314,3 +314,56 @@ textarea {
     flex-direction: column;
     align-items: flex-end;
 }
+
+.ChatHouse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media-chat span{
+    display: flex;
+    align-items: center;
+}
+#online-users{
+ width: 20%;   
+ height: 100%;
+ background: chartreuse;
+}
+body{
+    width: 100vw !important;
+    height: 100vh !important;
+    display: flex;
+    align-items: center;
+}
+.page-content{
+    flex-grow: 1;
+    height: fit-content;
+}
+.publisher{
+    background: tan;
+    height: 10vh;
+}
+.publisher-input{
+    
+    font-size: 1.3rem;
+}
+.card{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+#chat-content{
+    height: 70vh !important;
+}
+.publisher-btn{
+    background: cornflowerblue;
+}
+#leave-btn{
+    cursor: pointer;
+    border-radius: 10px;
+}
+#leave-btn:hover{
+    background: black;
+}

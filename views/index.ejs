@@ -10,18 +10,20 @@
 </head>
 
 <body>
-
+    <aside id="online-users">
+        <ul id="users"></ul>
+    </aside>
     <div class="page-content page-container" id="page-content">
         <div class="padding">
             <div class="row container d-flex justify-content-center">
                 <div class="col-md-6">
                     <div class="card card-bordered">
                         <div class="card-header">
-                            <h4 class="card-title"><strong>Chat</strong></h4> <a class="btn btn-xs btn-secondary"
-                                href="#" data-abc="true">Let's Chat App</a>
+                            <h4 class="card-title"><strong id="room-name">Chat</strong></h4><button
+                                class="btn btn-xs btn-secondary" id="leave-btn" data-abc="true">Leave Room!</button>
                         </div>
                         <div class="ps-container ps-theme-default ps-active-y" id="chat-content"
-                            style="overflow-y: scroll !important; height:400px !important;">
+                            style="overflow-y: scroll !important;">
 
 
                             <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
@@ -37,8 +39,8 @@
 
                             <input class="publisher-input" id="input" type="text" placeholder="Write something">
 
-                            <input type="text" hidden="true" value="<%= name %> ">
-                            <button type="submit" id="button">SEND</button>
+                            <input type="text" hidden="true" value="">
+                            <button type="submit" class="publisher-btn btn-xs" id="button">SEND</button>
                         </form>
 
                     </div>
@@ -46,7 +48,8 @@
             </div>
         </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+        integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/app.js"></script>
 </body>
