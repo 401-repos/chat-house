@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    margin-top: 10%;
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+form {
+    height: 500px;
+
+}
+
+form input, form #room {
+    width: 300px;
+    margin-bottom: 2%;
+    height: 50px;
+    /* text-align: center; */
+    border-radius: 10px;
+}
+
+form input:hover {
+    background-color: rgb(214, 226, 248);
+}
+
+form #room:hover {
+    background-color: rgb(214, 226, 248);
+    
+}
+
+form #btn {
+    width: 200px;
+    transition: .4s;
+}
+form #btn:hover {
+    background-color: rgb(142, 174, 235);
+}
+form #room {
+    align-items: center;
+}

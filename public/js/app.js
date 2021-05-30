@@ -29,7 +29,7 @@ function handleKeyPress(event) {
     }
     socket.emit('typing', {username, typing});
 }
-document.getElementById('room-name').innerHTML = room.toUpperCase() + " => Chat Room"
+document.getElementById('room-name').innerHTML = room.toUpperCase() + " Room"
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -94,7 +94,7 @@ function outputMessage(p, sender, payload) {
     // chatBox.append(newMessage);
     let appendMessage = '';
     if (sender.toLowerCase().split(' ').join('') == username.toLowerCase().split(' ').join('')) {
-        appendMessage = ` <div class="d-flex msg_div justify-content-end mb-4 ${sender.toLowerCase().split(' ').join('')}">
+        appendMessage = ` <div class="d-flex msg_div right justify-content-end mb-4 ${sender.toLowerCase().split(' ').join('')}">
         <div class="img_cont_msg">
             <img src="https://img.icons8.com/color/36/000000/administrator-male.png" class="rounded-circle user_img_msg">
             <strong> ${sender}</strong>
