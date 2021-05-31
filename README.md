@@ -4,17 +4,12 @@
 
 ## Author
 
-### 1. Omer Ramadan
-
-### 2. Haneen Zeyad
-
-### 3. Malak Momani
-
-### 4. Qais Ata
+## Omer Ramadan
 
 ### Links and Resources
 
 - [back-end server url](https://chat-house-project.herokuapp.com/)
+- [AWS deployed server from the GUI](http://chathouse-env.eba-xddrhd7v.us-east-1.elasticbeanstalk.com/)
 
 ### Setup
 
